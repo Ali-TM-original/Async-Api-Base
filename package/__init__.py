@@ -4,7 +4,7 @@ import aiohttp
 from io import BytesIO
 
 
-class Client:
+class Base:
     def __init__(self):
         self.headers = {"User-Agent": "Base Api"}
         self.session = aiohttp.ClientSession(headers=self.headers)
